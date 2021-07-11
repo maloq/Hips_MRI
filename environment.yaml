@@ -1,0 +1,14 @@
+name: mrnet
+channels:
+- pytorch
+- defaults
+dependencies:
+- torchvision>=0.8
+- matplotlib
+- pandas>=1.0.0
+- requests
+- pyyaml
+- pillow>=6.0.0
+- scikit-learn
+- scipy
+- pytorch>=1.7.0
