@@ -266,7 +266,7 @@ def run(args):
 
 def parse_arguments():
     parser = argparse.ArgumentParser()
-    parser.add_argument('-t', '--task', type=str, default='bone marrow lesion',
+    parser.add_argument('-t', '--task', type=str, default='synovitis',
                         choices=['synovitis', 'cartialge lesion', 'subchondral cysts', 'bone marrow lesion'])
     parser.add_argument('-p', '--plane', type=str, default='cor',
                         choices=['cor'])
@@ -295,5 +295,5 @@ if __name__ == "__main__":
     args = parse_arguments()
     transform_flag = True
     drop_researh_tags = [ 'DIRTY']
-    researh_types = ['FS', 'fs', 'STIR', 'SPAIR', 'DARK', ]
+    researh_types = ['STIR', 'FS', 'TRIM', 'fs', 'DARK', 'SPAIR', 'stir']
     run(args)

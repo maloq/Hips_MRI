@@ -15,6 +15,25 @@ def convert(o):
     raise TypeError
 
 
+def size_bbox_by_image(orig_bbox, height, width):    
+    
+    startX, startY, endX, endY = orig_bbox 
+    #print(orig_bbox)
+    #print( height, width)
+
+    if startX <= 0:
+        startX = 0
+    if startY <= 0:
+        startY = 0
+    if endX/width > 0.99:
+        print('bbox resized')
+        endX = int(endX*0.98)
+    if endY/height> 0.99:
+        print('bbox resized')
+        endY = int(endY*0.98) 
+        
+    return [startX, startY, endX, endY]   
+
 class PreprocessedDatasetFull():
     def __init__(self, part1_json='dataset_p1.json', part2_json='dataset_p2.json'):
 
@@ -46,10 +65,8 @@ class PreprocessedDatasetFull():
             if best_slice:
                 images = slice_crop(images, slice_crop_const, element['best_slice'])
 
-
-            
-            images = normalize_images_v1(images)
-           
+            images = rescale_image(images)
+            images = normalize_images_v1(images)           
 
             if resize:
                 images = resize_cv2(images, dim)
@@ -66,7 +83,6 @@ class PreprocessedDatasetFull():
             #images = normalize_images_v1(images)
 
             element['images'] = images
-            print(element['researh_type'])
             data_list_images.append(element)
 
         print(len(data_list_images), ' dataset length')
@@ -102,7 +118,8 @@ class PreprocessedDatasetPart1():
             box = re.findall(r"\d+", raw_box)
             integer_map = map(int, box)
             box = list(integer_map)
-
+            
+            
             try:
                 images = np.load(path[2:], allow_pickle=True)
             except ValueError:
@@ -141,21 +158,31 @@ class PreprocessedDatasetPart1():
                 [drop_type in element['researh_type'] for drop_type in drop_types]):
                 continue
             images = np.load(element['path'], allow_pickle=True)
-
+            
             element['label'] = int(element[task])
-
+            
+            element['box'] = size_bbox_by_image(element['box'], images.shape[1], images.shape[2])
+            
             if crop:
                 images = square_crop(images, element['box'])
             if best_slice:
                 images = slice_crop(images, 0.2, element['best_slice'])
             if resize:
-                images = resize_cv2(images, dim)
-
-            images = normalize_images_v2(images)
+                images = resize_cv2(images, dim)       
+            
+            images = rescale_image(images)
+            
+            #images = normalize_images_v2(images)
             # images = np.stack((images, contrast_stretch(images, n=2),equalize_clahe(images) ), axis=1)
+            
+            images = normalize_images_v1(images)
+            
+            images, big_box =  crop_black_bars(images)
+            element['box'] = resize_new_box(big_box, element['box'])
+            
             if stack_images:
                 images = np.stack((images, images, images), axis=1)
-            images = normalize_images_v1(images)
+            
             element['images'] = images
             data_list_images.append(element)
 

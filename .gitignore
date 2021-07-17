@@ -7,7 +7,6 @@ MRI_images_new
 MRI_images_2
 models
 *.ods
-*.csv
 *.xlsx
 logs/*
 __pycache__/
@@ -21,3 +20,4 @@ models
 *.pth
 *.png
 *.gif
+runs

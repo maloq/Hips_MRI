@@ -4,6 +4,39 @@ import cv2
 from skimage import data, img_as_float, util
 from skimage import exposure
 
+def crop_black_bars(images):    
+    
+    image = images[0]
+    
+    stitched = image
+    (_, mask) = cv2.threshold(stitched, 1.0, 255.0, cv2.THRESH_BINARY);
+
+    kernel = np.ones((10,10),np.uint8)
+    mask = cv2.erode(mask,kernel,iterations = 1)
+    kernel = np.ones((15,15),np.uint8)
+    mask = cv2.dilate(mask,kernel,iterations = 1)
+
+    temp = mask.copy()
+    (contours, _) = cv2.findContours(temp, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
+
+    contours = sorted(contours, key=lambda contour:len(contour), reverse=True)
+    roi = cv2.boundingRect(contours[0])
+    
+    box = [roi[0],roi[1],roi[0]+roi[2] ,roi[1]+roi[3]]
+    images = images[:,roi[1]:roi[1]+roi[3], roi[0]:roi[0]+roi[2]]
+        
+    return images, box
+    
+def resize_new_box(big_box, box):     
+    
+    startX, startY, endX, endY = box
+    startX -= big_box[0]
+    endX -= big_box[0]
+    startY -= big_box[1]
+    endY -= big_box[1]
+    resized_box = [startX, startY, endX, endY]    
+    
+    return resized_box 
 
 def crop_images(images, box):
     startX, startY, endX, endY = box
@@ -65,6 +98,12 @@ def resize_cv2(images, dim=(256, 256), interpolation=cv2.INTER_AREA):
 
     return uniform_images
 
+def rescale_image(images, n = 2):
+    
+    p1, p2 = np.percentile(images, (98-n, 100 - n))
+    mask = images > p2
+    images[mask] = p1
+    return images
 
 def normalize_images_v1(images):
     #n_sigma = [images.mean() - 3 * images.std(), images.mean() + 3 * images.std()]

@@ -1,0 +1,391 @@
+file;bone marrow lesion;synovitis;cartialge lesion;subchondral cysts;type
+bml/0001.png;0;1;1;0;PD
+bml/0002.png;0;1;0;0;PD
+bml/0003.png;0;1;0;0;PD
+bml/0005.png;1;1;1;1;T2
+bml/0006.png;0;1;0;1;PD
+bml/0007.png;0;1;0;1;PD
+bml/0009.png;1;1;1;1;T2 stir
+bml/0010.png;0;1;0;1;PD
+bml/0011.png;0;1;0;1;PD
+bml/0013.png;0;1;0;1;T2 stir
+bml/0014.png;0;1;0;1;PD
+bml/0015.png;0;1;0;0;PD
+bml/0017.png;1;0;0;0;T2 FS
+bml/0018.png;0;0;0;0;PD
+bml/0019.png;0;0;0;0;PD
+bml/0021.png;0;0;1;1;T2 FS
+bml/0022.png;0;0;0;0;PD stir
+bml/0023.png;0;1;1;1;PD stir
+bml/0025.png;1;1;0;0;T2 FS
+bml/0026.png;0;0;0;0;PD stir
+bml/0027.png;0;1;1;1;PD stir
+bml/0029.png;1;1;0;0;T2 FS
+bml/0030.png;0;0;0;0;PD stir
+bml/0031.png;0;1;1;0;PD stir
+bml/0032.png;1;1;1;0;T2 FS
+bml/0033.png;0;0;0;0;PD stir
+bml/0034.png;0;1;1;0;PD stir
+bml/0036.png;0;1;1;0;T2 FS
+bml/0037.png;0;0;0;0;PD stir
+bml/0038.png;0;1;1;0;PD stir
+bml/0040.png;1;0;1;0;T2 FS
+bml/0041.png;0;1;1;0;PD stir
+bml/0042.png;1;1;1;1;PD stir
+bml/0044.png;1;1;0;0;T2 FS
+bml/0045.png;0;1;0;0;PD stir
+bml/0046.png;0;1;0;0;PD stir
+bml/0048.png;0;0;0;0;T2 FS
+bml/0049.png;0;1;1;0;PD stir
+bml/0050.png;0;1;1;0;PD stir
+bml/0052.png;1;1;1;0;T2 FS
+bml/0053.png;0;1;1;0;PD stir
+bml/0054.png;0;1;1;0;PD stir
+bml/0056.png;0;0;1;0;T2 FS
+bml/0057.png;0;1;1;0;PD stir
+bml/0058.png;0;0;0;0;PD stir
+bml/0060.png;0;1;1;0;PD stir
+bml/0061.png;0;1;1;0;PD stir
+bml/0063.png;0;0;0;0;T2 FS
+bml/0065.png;1;0;1;1;T2
+bml/0066.png;0;1;1;1;PD stir
+bml/0067.png;0;1;1;0;PD stir
+bml/0069.png;1;0;1;1;T2
+bml/0070.png;0;0;0;0;PD stir
+bml/0071.png;0;0;1;1;PD stir
+bml/0073.png;1;0;1;1;T2 FS
+bml/0074.png;0;0;0;0;PD stir
+bml/0075.png;0;1;0;0;PD stir
+bml/0077.png;0;1;1;0;T2 FS
+bml/0078.png;0;1;1;0;PD stir
+bml/0079.png;0;1;1;0;PD stir
+bml/0081.png;1;1;1;0;T2 FS
+bml/0082.png;0;1;1;0;PD stir
+bml/0083.png;0;1;1;1;PD stir
+bml/0084.png;1;0;1;0;T2 FS
+bml/0086.png;1;0;1;1;T2 FS
+bml/0087.png;0;1;1;1;PD stir
+bml/0088.png;0;1;1;0;PD stir
+bml/0089.png;1;0;1;0;T2 FS
+bml/0090.png;0;0;0;0;PD stir
+bml/0091.png;0;0;1;0;PD stir
+bml/0093.png;1;0;1;0;T2 FS
+bml/0094.png;0;0;1;1;PD
+bml/0095.png;0;0;1;1;PD
+bml/0097.png;1;0;1;0;T2 FS
+bml/0098.png;0;0;1;1;PD
+bml/0099.png;0;0;1;0;PD
+bml/0101.png;0;0;0;0;T2 FS
+bml/0102.png;0;0;0;0;PD
+bml/0103.png;0;0;0;0;PD
+bml/0105.png;1;0;1;0;T2 FS
+bml/0106.png;0;0;0;0;PD
+bml/0107.png;0;0;1;0;PD
+bml/0109.png;1;0;1;1;T2
+bml/0110.png;0;0;1;1;PD
+bml/0111.png;0;0;1;1;PD
+bml/0113.png;0;0;1;1;T2 FS
+bml/0114.png;0;0;1;1;PD
+bml/0115.png;1;0;1;1;PD
+bml/0117.png;0;0;1;0;T2 FS
+bml/0118.png;0;0;0;0;PD
+bml/0119.png;0;0;1;0;PD
+bml/0121.png;1;0;1;0;T2 FS
+bml/0122.png;0;0;1;0;PD
+bml/0123.png;0;0;0;0;PD
+bml/0125.png;0;0;1;0;T2
+bml/0126.png;0;0;0;0;PD
+bml/0127.png;0;0;1;0;PD
+bml/0129.png;0;0;1;0;T2 FS
+bml/0130.png;0;1;1;0;PD
+bml/0131.png;0;1;1;0;PD
+bml/0133.png;0;1;1;0;T2
+bml/0134.png;0;1;1;0;PD
+bml/0135.png;0;1;1;0;PD
+bml/0137.png;0;0;1;1;T2 FS
+bml/0138.png;0;0;1;1;PD
+bml/0139.png;0;0;1;1;PD
+bml/0141.png;0;0;1;0;T2 FS
+bml/0142.png;0;0;1;1;PD
+bml/0143.png;0;0;0;0;PD
+bml/0145.png;1;0;1;1;PD
+bml/0146.png;1;0;1;0;PD
+bml/0148.png;1;0;1;1;T2 FS
+bml/0149.png;0;0;1;1;PD
+bml/0150.png;0;0;1;1;PD
+bml/0152.png;0;1;0;0;T2 FS
+bml/0153.png;0;0;1;0;PD
+bml/0154.png;0;0;1;0;PD
+bml/0156.png;0;1;1;1;T2 FS
+bml/0157.png;0;0;0;0;PD stir
+bml/0158.png;0;1;1;1;PD stir
+bml/0160.png;0;1;1;0;T2 FS
+bml/0161.png;0;0;1;0;PD
+bml/0162.png;0;1;1;0;PD
+bml/0164.png;0;1;1;1;T2 FS
+bml/0165.png;0;1;1;1;PD
+bml/0166.png;0;0;1;1;PD
+bml/0167.png;1;1;1;1;T2 FS
+bml/0168.png;1;0;1;1;PD
+bml/0169.png;0;1;1;1;PD
+bml/0171.png;1;0;1;1;T2 FS
+bml/0172.png;0;0;1;1;PD stir
+bml/0173.png;0;0;0;1;PD stir
+bml/0175.png;1;0;1;0;T2 FS
+bml/0176.png;0;0;0;0;PD
+bml/0177.png;0;0;1;0;PD
+bml/0179.png;0;0;1;0;T2 FS
+bml/0180.png;0;0;0;0;PD
+bml/0181.png;0;0;1;0;PD
+bml/0183.png;1;1;1;1;T2 FS
+bml/0184.png;1;0;0;0;PD
+bml/0185.png;0;0;1;1;PD
+bml/0187.png;0;1;0;0;PD
+bml/0188.png;0;1;1;0;PD
+bml/0189.png;0;0;0;0;T2
+bml/0190.png;0;0;0;0;T2
+bml/0191.png;0;0;0;0;T2
+bml/0192.png;0;0;0;0;T2
+bml/0194.png;1;1;1;0;T2 FS
+bml/0195.png;0;0;1;1;PD
+bml/0196.png;0;0;1;1;PD
+bml/0198.png;0;1;1;0;T2 FS
+bml/0199.png;1;0;1;0;PD
+bml/0200.png;1;1;1;0;PD
+bml/0201.png;0;1;1;1;T2
+bml/0202.png;0;1;1;0;T2
+bml/0203.png;1;1;1;1;T2 FS
+bml/0204.png;1;1;1;0;T2 FS
+bml/0206.png;1;1;1;1;T2 FS
+bml/0207.png;0;0;1;1;PD
+bml/0208.png;0;0;0;0;PD
+bml/0209.png;0;1;1;0;T2
+bml/0210.png;0;1;1;0;T2
+bml/0212.png;0;1;1;0;T2 FS
+bml/0215.png;0;0;1;1;T2 FS
+bml/0216.png;0;0;1;0;PD
+bml/0217.png;0;0;1;1;PD
+bml/0219.png;1;1;1;1;T2 FS
+bml/0220.png;0;0;0;0;PD
+bml/0221.png;1;1;1;1;PD
+bml/0223.png;0;1;1;0;T2 FS
+bml/0224.png;0;0;1;0;PD
+bml/0225.png;0;0;0;0;PD
+bml/0228_p1.png;0;0;0;0;PD
+bml/0229_p1.png;0;0;1;0;PD
+bml/0232_p1.png;0;1;1;1;T2
+bml/0233_p1.png;0;1;1;1;T2
+bml/0234_p1.png;1;1;1;1;T2_DARK
+bml/0235_p1.png;0;1;1;1;T2_DARK
+bml/0240_p1.png;0;1;1;1;T2
+bml/0241_p1.png;1;1;1;1;T2
+bml/0248_p1.png;0;0;1;1;PD_TSE
+bml/0249_p1.png;1;0;1;1;PD_TSE
+bml/0250_p1.png;0;1;1;1;PD
+bml/0251_p1.png;0;1;1;1;PD
+bml/0253_p1.png;0;1;1;1;T2_DARK
+bml/0255_p1.png;1;1;1;1;T2_DARK
+bml/0256_p1.png;0;1;1;0;PD
+bml/0257_p1.png;0;0;0;0;PD
+bml/0258_p1.png;0;1;1;0;T2_DARK
+bml/0260_p1.png;0;1;1;0;PD
+bml/0261_p1.png;0;0;0;0;PD
+bml/0262_p1.png;1;1;1;0;T2_DARK
+bml/0266_p1.png;0;0;0;0;T2
+bml/0267_p1.png;0;0;1;1;T2
+bml/0270_p1.png;0;0;0;0;T2
+bml/0271_p1.png;0;0;1;1;T2
+bml/0274_p1.png;0;0;0;0;T2
+bml/0275_p1.png;0;1;0;1;T2
+bml/0276_p1.png;1;0;0;0;T2_pdFS
+bml/0279_p1.png;0;1;1;1;T2
+bml/0280_p1.png;0;0;0;0;T2
+bml/0285_p1.png;1;0;0;0;PD
+bml/0286_p1.png;1;1;1;1;PD
+bml/0287_p1.png;1;1;1;1;T2_pdFS
+bml/0289_p1.png;0;0;0;0;T2
+bml/0290_p1.png;0;0;1;0;T2
+bml/0291_p1.png;0;0;1;0;PDW
+bml/0292_p1.png;0;0;1;0;PDW
+bml/0293_p1.png;0;0;1;0;PDW_SPAIR
+bml/0294_p1.png;1;0;1;0;PDW_SPAIR
+bml/0297_p1.png;0;0;0;0;T2
+bml/0298_p1.png;0;0;1;0;T2
+bml/0303_p1.png;0;0;0;0;PD_FS
+bml/0304_p1.png;0;1;1;1;PD_FS
+bml/0309_p1.png;0;0;0;0;T2
+bml/0310_p1.png;0;0;1;0;T2
+bml/0311_p1.png;0;1;1;1;PD
+bml/0312_p1.png;0;0;0;0;PD
+bml/0314_p1.png;1;1;1;1;T2
+bml/0317_p1.png;0;0;1;1;PD
+bml/0318_p1.png;0;0;0;0;PD
+bml/0321_p1.png;0;0;1;1;T2
+bml/0325_p1.png;1;1;1;0;T2
+bml/0329_p1.png;0;0;1;0;T2
+bml/0330_p1.png;0;0;1;0;T2
+bml/0331_p1.png;1;0;1;0;T2_FS
+bml/0332_p1.png;0;0;1;0;T2_FS
+bml/0333_p1.png;1;0;1;0;T2_FS
+bml/0334_p1.png;0;0;1;0;T2_FS
+bml/0335_p1.png;0;0;0;0;PD
+bml/0336_p1.png;0;1;1;0;PD
+bml/0337_p1.png;1;1;0;0;T2_pdFS
+bml/0340_p1.png;1;1;1;0;T2_FS
+bml/0341_p1.png;1;0;1;1;PD_FS
+bml/0342_p1.png;0;0;0;0;PD_FS
+bml/0347_p1.png;1;0;0;0;PD_FS
+bml/0348_p1.png;1;0;0;0;PD_FS
+bml/0349_p1.png;0;1;1;1;T2_STIR
+bml/0350_p1.png;0;0;0;0;T2_STIR
+bml/0351_p1.png;1;1;1;1;PD_FS
+bml/0352_p1.png;1;0;0;0;PD_FS
+bml/0357_p1.png;0;0;0;0;PD_FS
+bml/0358_p1.png;0;0;1;0;PD_FS
+bml/0359_p1.png;0;0;1;1;PD
+bml/0360_p1.png;0;0;0;0;PD
+bml/0362_p1.png;0;0;1;1;T2_FS
+bml/0364_p1.png;0;0;0;0;T2_FS
+bml/0365_p1.png;0;1;1;1;PD_FS_DIRTY
+bml/0366_p1.png;0;0;0;0;PD_FS_DIRTY
+bml/0367_p1.png;0;1;1;1;T2
+bml/0368_p1.png;0;0;0;0;T2
+bml/0371_p1.png;1;0;0;0;FS_PD
+bml/0372_p1.png;1;1;0;1;FS_PD
+bml/0375_p1.png;0;0;0;0;T2_FSE
+bml/0376_p1.png;0;1;0;1;T2_FSE
+bml/0379_p1.png;0;0;1;0;T2
+bml/0380_p1.png;0;0;1;0;T2
+bml/0381_p1.png;0;1;1;0;PD
+bml/0382_p1.png;0;1;1;0;PD
+bml/0383_p1.png;0;1;1;0;PD
+bml/0384_p1.png;0;1;1;0;PD
+bml/0386_p1.png;1;1;1;0;T2_FS
+bml/0389_p1.png;1;1;0;0;T2
+bml/0390_p1.png;1;1;0;0;T2
+bml/0391_p1.png;1;1;0;0;PD_FS
+bml/0392_p1.png;1;1;0;0;PD_FS
+bml/0393_p1.png;1;1;0;0;PD_FS
+bml/0394_p1.png;1;1;0;0;PD_FS
+bml/0403_p1.png;0;0;1;1;T2
+bml/0404_p1.png;0;0;1;1;T2
+bml/0405_p1.png;0;0;1;1;T2_DARK
+bml/0406_p1.png;0;1;1;1;T2_DARK
+bml/0407_p1.png;0;0;1;1;T2
+bml/0408_p1.png;0;1;1;1;T2
+bml/0411_p1.png;0;0;1;1;PD_FS
+bml/0412_p1.png;1;1;1;1;PD_FS
+bml/0413_p1.png;0;0;1;1;T2W
+bml/0414_p1.png;0;1;1;0;T2W
+bml/0419_p1.png;0;0;1;0;PD
+bml/0420_p1.png;1;1;1;0;PD
+bml/0422_p1.png;1;1;1;0;T2_FS
+bml/0423_p1.png;0;0;1;0;PD
+bml/0424_p1.png;0;0;1;1;PD
+bml/0426_p1.png;0;0;1;0;T2_FS
+bml/0430_p1.png;1;1;1;0;T2_FS
+bml/0431_p1.png;0;0;0;0;T2_FS-dixon
+bml/0432_p1.png;0;0;0;1;T2_FS-dixon
+bml/0433_p1.png;0;0;0;0;T2_FS-dixon
+bml/0434_p1.png;0;0;0;1;T2_FS-dixon
+bml/0435_p1.png;1;0;0;0;T2_FS-dixon
+bml/0436_p1.png;0;0;0;1;T2_FS-dixon
+bml/0437_p1.png;1;0;0;0;T2_FS-dixon
+bml/0438_p1.png;1;0;0;1;T2_FS-dixon
+bml/0439_p1.png;0;0;0;0;PD
+bml/0440_p1.png;1;0;0;1;PD
+bml/0441_p1.png;0;0;0;0;T2
+bml/0442_p1.png;0;0;1;0;T2
+bml/0445_p1.png;0;0;0;0;T2
+bml/0446_p1.png;0;0;1;0;T2
+bml/0451_p1.png;0;0;0;0;T2
+bml/0452_p1.png;0;0;1;1;T2
+bml/0453_p1.png;0;0;1;0;T2
+bml/0454_p1.png;1;1;1;1;T2
+bml/0455_p1.png;0;0;1;0;DIRTY_T2
+bml/0456_p1.png;1;1;1;1;DIRTY_T2
+bml/0459_p1.png;0;0;1;0;PD_FS
+bml/0460_p1.png;1;1;1;1;PD_FS
+bml/0461_p1.png;0;0;1;1;PD
+bml/0462_p1.png;0;0;0;0;PD
+bml/0464_p1.png;0;0;1;1;T2_FS
+bml/0465_p1.png;0;0;0;0;PD_FS
+bml/0466_p1.png;0;1;1;0;PD_FS
+bml/0467_p1.png;0;0;0;0;T2_STIR
+bml/0468_p1.png;0;1;1;0;T2_STIR
+bml/0471_p1.png;0;0;0;0;T2
+bml/0472_p1.png;0;1;1;0;T2
+bml/0475_p1.png;0;0;1;0;T2_FS
+bml/0476_p1.png;0;0;1;1;T2_FS
+bml/0477_p1.png;1;0;1;1;PD_FS
+bml/0478_p1.png;1;0;1;0;PD_FS
+bml/0479_p1.png;0;0;1;1;PD
+bml/0480_p1.png;0;0;1;0;PD
+bml/0483_p1.png;0;0;1;0;T2_STIR
+bml/0484_p1.png;0;0;1;0;T2_STIR
+bml/0488_p1.png;0;1;0;1;T2_STIR
+bml/0489_p1.png;1;1;0;1;T2_NF
+bml/0490_p1.png;0;0;0;0;PD
+bml/0491_p1.png;0;1;0;0;PD
+bml/0493_p1.png;0;1;0;0;T2
+bml/0496_p1.png;0;0;0;0;T2
+bml/0497_p1.png;0;1;0;0;T2
+bml/0498_p1.png;0;0;0;0;PD
+bml/0499_p1.png;0;1;0;0;PD
+bml/0500_p1.png;0;0;0;0;T2_FS
+bml/0501_p1.png;0;1;0;0;T2_FS
+bml/0502_p1.png;0;0;0;0;T2_SPINE
+bml/0503_p1.png;0;1;0;0;T2_SPINE
+bml/0504_p1.png;0;1;0;0;T2_FS
+bml/0506_p1.png;1;0;0;0;T2_STIR
+bml/0507_p1.png;1;1;1;0;T2_STIR
+bml/0508_p1.png;0;0;0;0;T2
+bml/0509_p1.png;0;1;1;0;T2
+bml/0512_p1.png;1;0;0;0;PD_FS
+bml/0513_p1.png;1;0;0;0;PD_FS
+bml/0514_p1.png;0;0;0;1;PD_FS
+bml/0515_p1.png;0;1;0;0;PD_FS
+bml/0518_p1.png;0;0;0;0;PD
+bml/0519_p1.png;0;1;1;0;PD
+bml/0520_p1.png;0;0;0;0;T2_FS
+bml/0522_p1.png;0;0;0;0;T2_FS
+bml/0523_p1.png;1;0;1;1;PD
+bml/0524_p1.png;1;0;0;0;PD
+bml/0526_p1.png;1;0;0;0;T2_FS
+bml/0527_p1.png;0;0;1;0;T2W
+bml/0528_p1.png;1;0;0;0;T2W
+bml/0533_p1.png;1;1;1;1;PD
+bml/0534_p1.png;1;0;0;0;PD
+bml/0536_p1.png;1;1;1;1;T2_FS
+bml/0537_p1.png;0;0;0;0;T2_DARK
+bml/0538_p1.png;1;1;1;1;T2_DARK
+bml/0541_p1.png;0;0;0;0;T2_DIRTY
+bml/0542_p1.png;1;1;1;1;T2_DIRTY
+bml/0543_p1.png;0;0;0;0;T2
+bml/0544_p1.png;1;1;1;1;T2
+bml/0547_p1.png;1;0;1;0;T2_FS
+bml/0548_p1.png;1;0;1;1;T2_FS
+bml/0551_p1.png;0;0;1;0;T2
+bml/0552_p1.png;0;0;1;1;T2
+bml/0553_p1.png;1;0;1;1;T2W
+bml/0554_p1.png;1;0;0;0;T2W
+bml/0559_p1.png;1;0;0;1;PD_rst
+bml/0560_p1.png;0;0;0;0;PD_rst
+bml/0562_p1.png;0;0;0;1;T2_FS
+bml/0563_p1.png;0;0;0;0;PD_TSE_FS
+bml/0564_p1.png;0;0;0;0;PD_TSE_FS
+bml/0567_p1.png;0;0;0;0;PD
+bml/0572_p1.png;0;0;0;0;T2_PELVIS
+bml/0573_p1.png;0;0;0;0;T2_PELVIS
+bml/0578_p1.png;0;0;0;0;T2_TSE
+bml/0579_p1.png;0;1;1;0;T2_TSE
+bml/0580_p1.png;0;0;0;0;T2_FS
+bml/0581_p1.png;0;1;1;0;T2_FS
+bml/0584_p1.png;0;1;1;1;T2_TRW
+bml/0585_p1.png;0;1;1;1;T2_TRW
+bml/0592_p1.png;0;1;1;0;PDW_SPAIR
+bml/0593_p1.png;0;1;1;0;PDW_SPAIR
+bml/0594_p1.png;0;1;1;0;T2W_TSE
+bml/0595_p1.png;0;1;1;0;T2W_TSE
+bml/0596_p1.png;1;1;1;0;T2W_TSE
+bml/0597_p1.png;0;0;0;0;T2W_TSE
