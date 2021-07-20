@@ -38,8 +38,7 @@ def train_model(model, train_loader, epoch, num_epochs, optimizer, writer, curre
 
         imagetv = image.numpy()
         imagetv = imagetv[0,0:int(imagetv.shape[1]/2),:,:,:]
-
-        writer.add_images('train', imagetv, epoch * len(train_loader) + i)
+        #writer.add_images('train', imagetv, epoch * len(train_loader) + i)
 
         if torch.cuda.is_available():
             image = image.cuda()
@@ -105,7 +104,7 @@ def evaluate_model(model, val_loader, epoch, num_epochs, writer, current_lr, log
 
         imagetv = image.numpy()
         imagetv = imagetv[0,0:int(imagetv.shape[1]/2),:,:,:]
-        writer.add_images('train', imagetv, epoch * len(val_loader) + i)
+        #writer.add_images('val', imagetv, epoch * len(val_loader) + i)
 
         if torch.cuda.is_available():
             image = image.cuda()
@@ -294,6 +293,6 @@ def parse_arguments():
 if __name__ == "__main__":
     args = parse_arguments()
     transform_flag = True
-    drop_researh_tags = [ 'DIRTY']
-    researh_types = ['STIR', 'FS', 'TRIM', 'fs', 'DARK', 'SPAIR', 'stir']
+    drop_researh_tags = [ 'DIRTY',]
+    researh_types = ['fs', 'SPAIR', 'STIR', 'FS', 'DARK']
     run(args)

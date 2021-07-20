@@ -35,6 +35,7 @@ def size_bbox_by_image(orig_bbox, height, width):
     return [startX, startY, endX, endY]   
 
 class PreprocessedDatasetFull():
+    
     def __init__(self, part1_json='dataset_p1.json', part2_json='dataset_p2.json'):
 
         self.drop_list = []
@@ -45,12 +46,15 @@ class PreprocessedDatasetFull():
             self.data_part2_info = json.load(read_file)
         print('Part 2 length ', len(self.data_part2_info))
 
+        small_boxes_json = 'small_boxes.json'        
+        with open(small_boxes_json, 'r') as read_file:
+            self.small_boxes_info = json.load(read_file)       
+
     def make_in_memory_dataset(self, task, projection, researh_types, drop_types, crop=True, best_slice=True,
-                               resize=True,
-                               dim=(256, 256), slice_crop_const = 0.2):
+                               resize=True, dim=(256, 256), slice_crop_const = 0.1, small_box = True):
 
-        data_list = self.data_part1_info + self.data_part2_info
-
+        #data_list = self.data_part1_info + self.data_part2_info        
+        data_list = self.data_part1_info        
         data_list_images: List[Dict[str, Union[List[int], Any]]] = []
 
         for element in data_list:
@@ -59,9 +63,15 @@ class PreprocessedDatasetFull():
                 [drop_type in element['researh_type'] for drop_type in drop_types]):
                 continue
             images = np.load(element['path'], allow_pickle=True)
-            element['label'] = int(element[task])
+            element['label'] = int(element[task])          
+            
+            if small_box:
+                box = element['small_box']
+            else:
+                box = element['box']
+                
             if crop:
-                images = square_crop(images, element['box'])
+                images = square_crop(images, box)
             if best_slice:
                 images = slice_crop(images, slice_crop_const, element['best_slice'])
 
@@ -103,6 +113,8 @@ class PreprocessedDatasetPart1():
                                                                        'rectangle'])
         self.root_dir = root_dir
 
+      
+
     def prepare(self, save_json=False):
         marking = self.dataset_info_part1
         bad_mark = '-'
@@ -136,7 +148,7 @@ class PreprocessedDatasetPart1():
                     element['bone marrow lesion'] = row['bone marrow lesion']
                     element['synovitis'] = row['synovitis']
                     element['ill'] = row['ill']
-
+                    
                     data_list.append(element)
                     length += 1
 
@@ -178,6 +190,7 @@ class PreprocessedDatasetPart1():
             images = normalize_images_v1(images)
             
             images, big_box =  crop_black_bars(images)
+            element['rescaled_box'] = big_box
             element['box'] = resize_new_box(big_box, element['box'])
             
             if stack_images:

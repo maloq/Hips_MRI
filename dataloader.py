@@ -49,11 +49,11 @@ class MRDataset(data.Dataset):
             ])
             self.transforms_random = A.Compose([
                 #A.CLAHE(),
-                #A.Affine(translate_px = 20),
-                A.GaussNoise(var_limit=(0.0, 10.0)),
+                #A.Affine(translate_px = 20, rotate=4, shear=10),
+                #A.GaussNoise(var_limit=(0.0, 10.0)),
                 A.MedianBlur(blur_limit=3),
                 #A.ElasticTransform(alpha=1, sigma=50),
-                #A.RandomGamma(gamma_limit=(60, 140)),
+                A.RandomGamma(gamma_limit=(60, 140)),
                 #albumentations.pytorch.transforms.ToTensorV2(),
             ])
 
